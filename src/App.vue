@@ -1,10 +1,9 @@
 <template>
-  <v-app dark>
+  <v-app>
     <NavDrawer :drawer="drawer"/>
     <v-app-bar
       app
       color="grey darken-4"
-      dark
     >
       <v-app-bar-nav-icon  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title
@@ -41,19 +40,21 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <v-container fluid>
+        <Home />
+      </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Home from './views/Home'
 import NavDrawer from './components/NavDrawer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Home,
     NavDrawer
   },
   data () {

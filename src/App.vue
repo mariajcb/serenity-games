@@ -1,32 +1,65 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app dark>
+    <NavDrawer :drawer="drawer"/>
+    <v-app-bar
+      app
+      color="grey darken-4"
+      dark
+    >
+      <v-app-bar-nav-icon  @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title
+        class="mt-2 hidden-sm-and-down"
+        style="font-size: 1.75rem; font-family: Papyrus;">
+          Serenity Games
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        icon
+        class="mr-2"
+      >
+        <v-icon>mdi-phone</v-icon>
+      </v-btn>
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        icon
+        class="mr-2"
+      >
+        <v-icon>mdi-calendar</v-icon>
+      </v-btn>
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        icon
+        class="mr-2"
+      >
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HelloWorld from './components/HelloWorld'
+import NavDrawer from './components/NavDrawer'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name: 'App',
+  components: {
+    HelloWorld,
+    NavDrawer
+  },
+  data () {
+    return {
+      drawer: false
     }
   }
 }
-</style>
+</script>

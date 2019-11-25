@@ -17,7 +17,7 @@
             </v-list-item>
 
             <v-img
-              :src="item.img"
+              src="@/assets/FNM.jpg"
               height="194"
             ></v-img>
 

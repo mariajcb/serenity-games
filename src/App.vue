@@ -6,18 +6,21 @@
         <Home />
       </v-container>
     </v-content>
+    <TheFooter />
   </v-app>
 </template>
 
 <script>
 import Home from './views/Home'
-import TheNavigation from './components/TheNavigation'
+import TheNavigation from './components/global/TheNavigation'
+import TheFooter from './components/global/TheFooter'
 
 export default {
   name: 'App',
   components: {
     Home,
-    TheNavigation
+    TheNavigation,
+    TheFooter
   }
 }
 </script>

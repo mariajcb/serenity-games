@@ -91,7 +91,7 @@ export default {
         { title: 'Space', icon: 'mdi-table-chair' },
         { title: 'Community', icon: 'mdi-party-popper' },
         { title: 'Events', icon: 'mdi-calendar' },
-        { title: 'Staff', icon: 'mdi-account-multiple' },
+        { title: 'Crew', icon: 'mdi-account-multiple' },
         { title: 'Contact', icon: 'mdi-help-circle' }
       ]
     }

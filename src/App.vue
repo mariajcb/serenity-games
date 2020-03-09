@@ -3,7 +3,7 @@
     <TheNavigation/>
     <v-content>
       <v-container fluid>
-        <Home />
+        <router-view />
       </v-container>
     </v-content>
     <TheFooter />
@@ -11,14 +11,12 @@
 </template>
 
 <script>
-import Home from './views/Home'
 import TheNavigation from './components/global/TheNavigation'
 import TheFooter from './components/global/TheFooter'
 
 export default {
   name: 'App',
   components: {
-    Home,
     TheNavigation,
     TheFooter
   }

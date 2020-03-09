@@ -25,6 +25,7 @@
           <v-list-item
             v-for="item in items"
             :key="item.title"
+            :to="item.url"
             link
           >
             <v-list-item-icon>
@@ -85,14 +86,14 @@ export default {
     return {
       drawer: false,
       items: [
-        { title: 'Home', icon: 'mdi-home' },
-        { title: 'Games', icon: 'mdi-dice-d20' },
-        { title: 'Cafe', icon: 'mdi-food-fork-drink' },
-        { title: 'Space', icon: 'mdi-table-chair' },
-        { title: 'Community', icon: 'mdi-party-popper' },
-        { title: 'Events', icon: 'mdi-calendar' },
-        { title: 'Crew', icon: 'mdi-account-multiple' },
-        { title: 'Contact', icon: 'mdi-help-circle' }
+        { title: 'Home', icon: 'mdi-home', url: '/' },
+        { title: 'Games', icon: 'mdi-dice-d20', url: '/games' },
+        { title: 'Cafe', icon: 'mdi-food-fork-drink', url: '/cafe' },
+        { title: 'Space', icon: 'mdi-table-chair', url: '/space' },
+        { title: 'Community', icon: 'mdi-party-popper', url: '/community' },
+        { title: 'Events', icon: 'mdi-calendar', url: '/events' },
+        { title: 'Crew', icon: 'mdi-account-multiple', url: '/crew' },
+        { title: 'Contact', icon: 'mdi-help-circle', url: '/contact' }
       ]
     }
   }

@@ -7,7 +7,7 @@
       <v-card
         class="pa-2"
         :color="item.color"
-        max-height="300"
+        height="300"
         tile
         outlined
       >

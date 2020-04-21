@@ -14,18 +14,16 @@
         <v-card-title class="title">
           {{item.title}}
         </v-card-title>
-        <v-card-subtitle class="subtitle-1">
-          {{item.subtitle}}
-        </v-card-subtitle>
-        <v-card-text>
+        <v-card-text class="body-1">
           {{item.text}}
         </v-card-text>
         <v-card-actions>
           <v-btn
             text
+            outlined
             :to="item.url"
           >
-            Learn More
+            {{ item.button }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -41,31 +39,32 @@ export default {
       items: [
         {
           title: 'Games',
-          subtitle: 'We have a bunch',
-          text: 'Roleplaying games, collectible card games, board games, tabletop games, under the table games, mind games, the most dangerous games!',
+          text: `Serenity Games supports gaming in all its myriad of forms!  From RPG's, Tabletop Games, Board Games, Collectible Card Games, as well as the accessories to complement them!`,
           url: '',
-          color: 'outlined'
+          color: '#85450A',
+          button: 'We have a bunch'
         },
         {
           title: 'Food',
-          subtitle: 'Don`t play hangry',
-          text: 'Our cafe has the latest in gourmet grub. Stuff your face and play some games. Don`t forget to say `please` when you order',
+          text: `As we travel across the 'Verse, gamers need fuel! The Serenity Games Cafe is fully equipped to satisfy with delicious Air-Fried consumables, frosty sweet treats, or energizing coffee beverages.`,
           url: '',
-          color: 'amber darken-3'
+          color: 'outlined',
+          button: `Don't play hangry`
         },
-        {
-          title: 'Space',
-          subtitle: 'Not the one with planets',
-          text: 'Tired of having to clean your house, only for your boardgame-loving friends to mess it up? Take advantage of our already clean facilities.',
-          url: '',
-          color: 'outlined'
-        },
+        // {
+        //   title: 'Space',
+        //   subtitle: 'Not the one with planets',
+        //   text: 'Tired of having to clean your house, only for your boardgame-loving friends to mess it up? Take advantage of our already clean facilities.',
+        //   url: '',
+        //   color: 'outlined'
+        // },
         {
           title: 'Community',
           subtitle: 'Can`t buy it on Amazon',
-          text: 'Whether you are a beginner or a competitive player, no matter how obscure your interests are, you can find friends around here',
+          text: `Without those who entrust us to provide a quality atmosphere to forge their games, dreams, and friendships... well I reckon we'd just be another empty ship in the harbor.  Everything we do is for you.`,
           url: '',
-          color: 'deep-orange darken-4'
+          color: 'deep-orange darken-4',
+          button: 'Our most prized resource'
         }
       ]
     }

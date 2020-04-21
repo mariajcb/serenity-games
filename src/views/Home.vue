@@ -2,7 +2,8 @@
   <div class="home">
     <TheCarousel />
     <OfferCards />
-    <PartyPanel />
+    <CoronaVirus />
+    <!-- <PartyPanel /> -->
     <BioCard />
   </div>
 </template>
@@ -11,7 +12,8 @@
 // @ is an alias to /src
 import TheCarousel from '@/components/home/TheCarousel.vue'
 import OfferCards from '@/components/home/OfferCards.vue'
-import PartyPanel from '@/components/home/PartyPanel.vue'
+import CoronaVirus from '@/components/home/CoronaVirus.vue'
+// import PartyPanel from '@/components/home/PartyPanel.vue'
 import BioCard from '@/components/home/BioCard.vue'
 
 export default {
@@ -19,7 +21,8 @@ export default {
   components: {
     TheCarousel,
     OfferCards,
-    PartyPanel,
+    CoronaVirus,
+    // PartyPanel,
     BioCard
   }
 }

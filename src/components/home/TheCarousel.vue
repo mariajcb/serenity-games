@@ -28,9 +28,7 @@ export default {
       colors: [
         'primary',
         'secondary',
-        'yellow darken-2',
-        'red',
-        'orange'
+        'yellow darken-2'
       ]
     }
   }

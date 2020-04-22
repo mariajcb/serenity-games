@@ -1,18 +1,16 @@
 <template lang="html">
   <v-card
     class="mx-auto"
-    color="deep-orange darken-4"
+    color="#85450A"
   >
-
     <v-container>
       <v-row dense>
-
         <v-col
           cols="12"
         >
           <v-card
             dark
-            color="deep-orange darken-4"
+            color="#85450A"
             flat
             class="py-7"
           >
@@ -22,7 +20,7 @@
                 size="125"
                 circle
               >
-                <v-img src="http://placekitten.com/125/125"></v-img>
+                <v-img src="@/assets/bio-photo.jpg"></v-img>
               </v-avatar>
               <div>
                 <v-card-title
@@ -32,7 +30,8 @@
                 <v-card-actions>
                     <v-btn
                       text
-                      class="font-weight-black">Meet the crew
+                      class="font-weight-black"
+                      to="/crew">Meet the crew
                       <v-icon>
                         mdi-chevron-right
                       </v-icon>

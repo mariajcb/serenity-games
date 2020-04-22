@@ -22,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+.v-image__image {
+  opacity: 0.6!important;
+}
+</style>

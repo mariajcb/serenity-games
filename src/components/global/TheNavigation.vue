@@ -89,9 +89,9 @@ export default {
         { title: 'Home', icon: 'mdi-home', url: '/' },
         { title: 'Games', icon: 'mdi-dice-d20', url: '/games' },
         { title: 'Cafe', icon: 'mdi-food-fork-drink', url: '/cafe' },
-        { title: 'Space', icon: 'mdi-table-chair', url: '/space' },
+        // { title: 'Space', icon: 'mdi-table-chair', url: '/space' },
         { title: 'Community', icon: 'mdi-party-popper', url: '/community' },
-        { title: 'Events', icon: 'mdi-calendar', url: '/events' },
+        // { title: 'Events', icon: 'mdi-calendar', url: '/events' },
         { title: 'Crew', icon: 'mdi-account-multiple', url: '/crew' },
         { title: 'Contact', icon: 'mdi-help-circle', url: '/contact' }
       ]

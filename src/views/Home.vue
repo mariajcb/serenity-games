@@ -14,7 +14,7 @@ import TheCarousel from '@/components/home/TheCarousel.vue'
 import OfferCards from '@/components/home/OfferCards.vue'
 import CoronaVirus from '@/components/home/CoronaVirus.vue'
 // import PartyPanel from '@/components/home/PartyPanel.vue'
-import BioCard from '@/components/home/BioCard.vue'
+import BioCard from '@/components/global/BioCard.vue'
 
 export default {
   name: 'home',

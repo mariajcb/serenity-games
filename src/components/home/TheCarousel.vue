@@ -1,11 +1,14 @@
 <template lang="html">
 <v-carousel>
   <v-carousel-item
-    v-for="(color, i) in colors"
-    :key="color"
+    v-for="(item, i) in items"
+    :key="i"
+    :src="item.src"
+    reverse-transition="fade-transition"
+    transition="fade-transition"
   >
     <v-sheet
-      :color="color"
+      color="transparent"
       height="100%"
       tile
     >
@@ -14,7 +17,7 @@
         align="center"
         justify="center"
       >
-        <div class="display-3">GAMES {{ i + 1 }}</div>
+        <div class="display-3 font-weight-medium">{{ item.title }}</div>
       </v-row>
     </v-sheet>
   </v-carousel-item>
@@ -25,15 +28,21 @@
 export default {
   data () {
     return {
-      colors: [
-        'primary',
-        'secondary',
-        'yellow darken-2'
+      items: [
+        {
+          src: require('@/assets/games.jpg'),
+          title: 'GAMES'
+        },
+        {
+          src: require('@/assets/food.jpg'),
+          title: 'FOOD'
+        },
+        {
+          src: require('@/assets/community.jpg'),
+          title: 'COMMUNITY'
+        }
       ]
     }
   }
 }
 </script>
-
-<style lang="css" scoped>
-</style>

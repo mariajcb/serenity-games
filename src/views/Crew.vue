@@ -21,13 +21,13 @@
                 size="125"
                 circle
               >
-                <v-img src="@/assets/bio-photo.jpg"></v-img>
+                <v-img src="https://placekitten.com/125/125"></v-img>
               </v-avatar>
               <div>
                 <v-card-title
                   class="headline mb-1 font-weight-black"
                 >{{ item.name }}</v-card-title>
-                <v-card-subtitle class="subtitle-1">Scratch at door to be let outside, get let out then scratch at door immmediately after to be let back in plays league of legends for bathe private parts with tongue then lick owner's face shake treat bag. So you're just gonna scroll by without saying meowdy? push your water glass on the floor yet dismember a mouse and then regurgitate part</v-card-subtitle>
+                <v-card-subtitle class="subtitle-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</v-card-subtitle>
               </div>
             </div>
           </v-card>
